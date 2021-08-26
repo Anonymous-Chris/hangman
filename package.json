@@ -1,11 +1,14 @@
 {
-  "name": "boilerplate",
+  "homepage": "http://Anonymous-Chris.github.io/Hangman",
+  "name": "hangman",
   "version": "1.0.0",
   "description": "",
   "main": "input.js",
   "scripts": {
     "dev-server": "webpack  --mode development --watch",
-    "build": "webpack  --mode production"
+    "build": "webpack  --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
